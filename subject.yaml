@@ -1,0 +1,32 @@
+# Subject manifest — convention 2.0 (docs/CONTENT_CONVENTION.md §3.2).
+# Converted from github.com/Manta-Epitech-Academy/pypong_new (metadata.yaml 1.5).
+schema_version: "2.0"
+
+project:
+  name: "PyPong"
+  slug: "pypong"
+  summary: "Créez votre propre jeu Pong simplifié en Python avec TIC-80 !"
+  entrypoint: "intro.md"
+
+# The web app shown beside the instructions (PLAN.md §14). `id` + `version`
+# select a dist built by tools/build_runtime.sh and served same-origin at
+# /runtime/<id>/<version>/ — reading this block is enough to deploy the pane.
+runtime:
+  engine: "TIC-80"
+  language: "python"
+  id: "tic80"
+  version: "8ad976f"          # tic80-web-editor commit the dist was built from
+  title: "TIC-80"
+  pane:
+    placement: side           # side | bottom
+    open: false               # let the participant read the intro first
+    size: 55                  # percent of the viewport width
+
+platform:
+  mode_default: instructor_led
+  validation_default: checkpoint
+  points_default: 25
+
+documents:
+  - intro.md
+  - pypong.md
