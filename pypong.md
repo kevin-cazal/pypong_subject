@@ -5,13 +5,30 @@
 Vous êtes prêt à créer votre premier mini jeu
 
 ## Faire bouger le pad
+<!-- ws: {type: exercise, id: pad-move} -->
 
 Pour arriver à faire bouger le pad avec le clavier, nous devons  : 
 
 - Déclarez une variable `padx` qui va nous permettre modifier la valeur de la position de notre pad sur l’axe des abscisses
 - Utilisez une condition `if` pour modifier la valeur de `padx` lorsque l’on appuie sur la touche **`←`** du clavier
 
-Retournez dans l’éditeur pour modifier le code
+<!-- ws:toolbox -->
+### Boîte à outils
+
+> 🧰 **Outil #1 : Variable**
+> Une variable permet de représenter une valeur qui va changer lors de l'execution d'un programme.
+> `padx` va représenter la position de notre pad sur l'axe des abscisses, cette position peut être modifiée (sinon le pad ne pourrait pas bouger)
+> Le `=` permet de donner une valeur à une variable
+
+> 🧰 **Outil #2 : Condition**
+> `if` permet d'exécuter du code seulement à une condition
+> Ici la condition est: « si le joueur appuie sur la touche **`←`** »
+> Le code à executer sous cette condition: « alors modifie la valeur de `padx` »
+
+<!-- /ws:toolbox -->
+
+
+Retourne dans l’éditeur pour modifier le code
 
 ```python
 # script:  python
@@ -29,20 +46,13 @@ def TIC():
  rect(padx, 110, padw, padh, 12)
 ```
 
-Vous pouvez maintenant retourner sur le terminal avec la touche **`ESC`** de votre clavier et taper la commande **`run`** pour lancer votre jeu
+Teste en cliquant dans le panneau TIC-80, le raccourci **`Ctrl`+`Entrée`** relance le jeu avec ton code modifié:
+- La touche **`←`** doit déplacer le pad vers la gauche. 
 
-### Exercice 1 : Faites bouger le pad dans l’autre direction
-<!-- ws: {type: exercise, id: pad-direction} -->
+### Fait bouger le pad dans l’autre direction
+<!-- ws:doit -->
 
-<!-- ws:resume -->
-- le pad doit bouger à droite comme à gauche
-- s'inspirer du code précédent (`btn`, `padx`)
-<!-- /ws:resume -->
-
-En vous inspirant du code précédent, vous devez faire en sorte que le pad puisse bouger à droite comme à gauche
-
-<!-- ws: {type: hint} -->
-<details><summary>Indice</summary>
+Après avoir testé le code précédent, inspire toi de celui-ci pour faire en sorte que le pad puisse bouger à droite comme à gauche.
 
 
 La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du clavier). Une page dans l’aide contient le tableau de correspondance avec les touches du clavier :  [https://github.com/nesbox/TIC-80/wiki/key-map](https://github.com/nesbox/TIC-80/wiki/key-map)
@@ -58,62 +68,65 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 * D. btn("down")
 
 
-### Exercice 2 : Limitez les mouvement du pad
-<!-- ws: {type: exercise, id: pad-limites} -->
+### Limitez les mouvement du pad
+<!-- ws:doit -->
 
-<!-- ws:resume -->
-- le pad reste dans le carré du jeu
-<!-- /ws:resume -->
+<!-- ws:toolbox -->
+### Boîte à outils
 
-Vous voulez maintenant améliorer les mouvements du pad en faisant en sorte qu’il reste dans le carré du jeu
+> 🧰 **Outil #1 : Opérateur logique `and` **
+> Un bloc `if condition1 and condition2:` n'executera du code si et seulement si `condition1` et `condition2` sont remplies
+> Exemple:
+> ```python
+> if ilFaitBeau and jeSuisDehors:
+>   ouvreUnParapluie
+> ```
+<!-- /ws:toolbox -->
 
-<!-- ws: {type: hint} -->
-<details><summary>Indice</summary>
+<!-- ws:doit -->
+Améliore la gestion des les mouvement du pad en faisant en sorte qu'il reste dans le carré du jeu.
 
-
-Ajouter une condition supplémentaire dans votre `if` avec l’opérateur logique `and`
-
-</details>
-    
 
 ## Créer la balle rebondissante
-
-### Exercice 1 : Dessinez  la balle
-<!-- ws: {type: exercise, id: balle-dessin} -->
-
-Vous allez utiliser la fonction  `circ` pour créer la balle au centre de l’écran, pensez à utiliser des variables `ballx` et `bally` pour pouvoir déplacer votre balle dans l’écran de jeu
-
-<!-- ws: {type: hint} -->
-<details><summary>Indice</summary>
-
-
-vous pouvez aller consulter l’aide de TIC80 [https://tic80.com/learn](https://tic80.com/learn) et retrouver tous les paramètres de la fonction `circ`
-
-</details>
-    
-
-### Exercice 2 : Faire bouger la balle
 <!-- ws: {type: exercise, id: balle-mouvement} -->
 
-Pour faire bouger la balle, vous allez modifier les coordonnées du centre :  `ballx` et `bally` 
+### Dessiner la balle
+<!-- ws:doit -->
 
-Pour obtenir une trajectoire en diagonal (comme sur un billard), il faut modifier à chaque fois `ballx` et `bally` 
+<!-- ws:toolbox -->
+### Boîte à outils
 
-Tout d’abord essayez de faire bouger la balle en diagonal vers le haut et vers la droite en utilisant deux nouvelles variables `ballspeedx` et `ballspeedy`
+> 🧰 **Outil #1 : La fonction circ**
+> Consulte l'aide de TIC80 [https://tic80.com/learn](https://tic80.com/learn) et retrouver tous les paramètres de la fonction `circ`
+<!-- /ws:toolbox -->
 
-<!-- ws: {type: hint} -->
-<details><summary>Indice</summary>
+Utilise la fonction  `circ` pour créer la balle au centre de l’écran, pensez à utiliser des variables `ballx` et `bally` pour pouvoir déplacer votre balle dans l’écran de jeu
 
+### Exercice 2 : Faire bouger la balle
+<!-- ws:doit -->
+
+
+<!-- ws:toolbox -->
+### Boîte à outils
+
+> 🧰 **Outil #1 : Vecteur vitesse**
+> La fonction `TIC()` est lancée 60 fois par secondes.
+> Pour faire bouger la balle à l'écran à une certaine vitesse, tu dois ajouter à la position de la balle `ballx` et `bally` une vitesse `ballspeedx` et `ballspeedy` à chaque fois que la fonction TIC() est lancée.
+> Une vitesse nulle rend la balle immobile.
+<!-- /ws:toolbox -->
+
+Pour faire bouger la balle, tu vas modifier les coordonnées du centre :  `ballx` et `bally` 
 
 ![Capture d’écran 2024-12-03 à 22.03.04.png](https://raw.githubusercontent.com/Manta-Epitech-Academy/pypong_new/main/img/Capture_decran_2024-12-03_a_22.03.04.png)
 
-</details>
-    
+Pour obtenir une trajectoire en diagonale (comme sur un billard), il faut modifier à chaque fois `ballx` et `bally` 
+
+Tout d’abord essayez de faire bouger la balle en diagonale vers le haut et vers la droite en utilisant deux nouvelles variables `ballspeedx` et `ballspeedy`
 
 ### Exercice 3 : Faire rebondir la balle
 <!-- ws: {type: exercise, id: balle-rebond} -->
 
-Pour faire rebondir la balle, vous devez inverser la direction de la balle en fonction de sa position à l’écran. 
+Pour faire rebondir la balle, tu dois inverser la direction de la balle en fonction de sa position à l’écran. 
 
 si la balle se retrouve en limite avec la zone de jeu alors on simule une collision en inversant la vitesse de la balle sur l’axe sur lequel se trouve la collision
 
@@ -123,15 +136,9 @@ La balle est dans la position 1 et se dirige vers la position 2 en suivant la tr
 
 Une fois arrivé au niveau de la bordure de la zone de jeu, sur notre schéma à la position `x=120` alors on inverse la vitesse de la balle et `ballspeedx = -2` 
 
-<!-- ws: {type: hint} -->
-<details><summary>Indice</summary>
-
-
 Il faut penser à prendre en compte le rayon de la balle.
 
-Vous avez 3 cas à gérer, la bordure du haut, la bordure de droite et la bordure de gauche.
-
-</details>
+Tu as 3 cas à gérer, la bordure du haut, la bordure de droite et la bordure de gauche.
 
 <!-- ws: {type: quiz, id: rebond, kind: match, points: 10} -->
 > Faites correspondre la vitesse initiale de la balle sur un axe avec la nouvelle vitesse de la balle sur ce même axe afin qu'elle reparte dans l'autre sens ?
@@ -143,49 +150,50 @@ Vous avez 3 cas à gérer, la bordure du haut, la bordure de droite et la bordur
 - b. 0
 - c. -2
 
-## Gérer le respawn et la collision avec le pad
+## Checkpoint
+<!-- ws: {type: exercise, id: checkpoint} -->
 
-### Exercice 1 : Respawn
+Vérifie le comportement de ton programme:
+- Les flèches gauche et droite de ton clavier font bouger le pad dans les deux directions
+- La balle commence au centre de l'écran, elle se déplace toute seule et rebondi lorsqu'elle rencontre un bord de l'écran
+
+
+## Gérer le respawn et la collision avec le pad
 <!-- ws: {type: exercise, id: respawn} -->
+
+### Respawn
+<!-- ws:doit -->
 
 Lorsque la balle dépasse la limite de la bordure du bas de l’espace de jeu, elle continue à descendre pour ensuite disparaître. 
 
-Vous allez devoir faire en sorte de la balle “respawn” au point de départ dès que la balle sort de l’espace de jeu par le bas
+Tu vas devoir faire en sorte de la balle “respawn” au point de départ dès que la balle sort de l’espace de jeu par le bas
 
-### Exercice 2 : gérer la collision avec le pad
-<!-- ws: {type: exercise, id: collision-pad} -->
+### Gérer la collision avec le pad
+<!-- ws:doit -->
 
-Lorsque la balle se retrouve en collision avec le pad, vous allez devoir faire en sorte que la balle rebondisse sur le pad. Cette étape est importante car c’est à partir de ce moment la que votre jeu sera vraiment jouable
+Lorsque la balle se retrouve en collision avec le pad, tu vas devoir faire en sorte que la balle rebondisse sur le pad. Cette étape est importante car c’est à partir de ce moment là que votre jeu sera vraiment jouable
 
 <!-- ws: {type: hint} -->
 <details><summary>Indice</summary>
-
 
 Utilisez une triple condition qui utilise les variables `ballx` `bally`  `padx`  `pady`  et `padw`   pour gérer la collision
 
 </details>
-    
 
 ## Ajouter une interface
+<!-- ws: {type: exercise, id: interface} -->
 
-### Exercice 1 : le score
-<!-- ws: {type: exercise, id: score} -->
+### Le score
+<!-- ws:doit -->
 
-Avec la fonction `print` et la fonction `str` , vous allez afficher le score à l’écran, la méthode de calcul est simple : plus 10 points à chaque fois que la balle rebondit sur le pad
+Avec la fonction `print` et la fonction `str` , tu vas afficher le score à l’écran, la méthode de calcul est simple : plus 10 points à chaque fois que la balle rebondit sur le pad
 
-<!-- ws: {type: hint} -->
-<details><summary>Indice</summary>
+Positionne la fonction print à la fin de votre fonction `TIC()` pour que le score s’affiche au dessus de tous les autres élements
 
+Crée une nouvelle variable `score` que tu vas incrémenter dans la condition qui permet de faire rebondir la balle
 
-Positionnez la fonction print à la fin de votre fonction `TIC()` pour que le score s’affiche au dessus de tous les autres élements
-
-Créez une nouvelle variable `score` que vous allez incrémenter dans la condition qui permet de faire rebondir la balle
-
-</details>
-    
-
-### Exercice 2 : Life & game over
-<!-- ws: {type: exercise, id: vies-gameover} -->
+### Life & game over
+<!-- ws:doit -->
 
 De la même manière que dans l’exercice précédent, créez un système de vie, avec 3 vies et un affichage dans l’interface en dessous du score. Lorsque le nombre de vie est égale à zéro alors replacez la balle à son point de départ, faites en sorte que la balle ne bouge plus et affichez “game over” au centre de l’écran
 
