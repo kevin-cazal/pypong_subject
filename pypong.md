@@ -5,7 +5,7 @@
 Vous êtes prêt à créer votre premier mini jeu
 
 ## Faire bouger le pad
-<!-- ws: {type: exercise, id: pad-move} -->
+<!-- ws: {type: exercise, id: pad-mouvement} -->
 
 Pour arriver à faire bouger le pad avec le clavier, nous devons  : 
 
@@ -55,10 +55,13 @@ Teste en cliquant dans le panneau TIC-80, le raccourci **`Ctrl`+`Entrée`** rela
 Après avoir testé le code précédent, inspire toi de celui-ci pour faire en sorte que le pad puisse bouger à droite comme à gauche.
 
 
+<!-- ws: {type: hint} -->
+<details><summary>Indice</summary>
+
 La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du clavier). Une page dans l’aide contient le tableau de correspondance avec les touches du clavier :  [https://github.com/nesbox/TIC-80/wiki/key-map](https://github.com/nesbox/TIC-80/wiki/key-map)
 
 </details>
-    
+
 <!-- ws: {type: quiz, id: btn-doc, kind: multiple, points: 10} -->
 > Avec TIC-80, si je souhaite avoir l'état des touches haut et bas du joueur 1, je dois utiliser dans mon code (2 réponses correctes)
 
@@ -69,7 +72,6 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 
 
 ### Limitez les mouvement du pad
-<!-- ws:doit -->
 
 <!-- ws:toolbox -->
 ### Boîte à outils
@@ -83,15 +85,11 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 > ```
 <!-- /ws:toolbox -->
 
-<!-- ws:doit -->
 Améliore la gestion des les mouvement du pad en faisant en sorte qu'il reste dans le carré du jeu.
 
 
 ## Créer la balle rebondissante
 <!-- ws: {type: exercise, id: balle-mouvement} -->
-
-### Dessiner la balle
-<!-- ws:doit -->
 
 <!-- ws:toolbox -->
 ### Boîte à outils
@@ -100,10 +98,12 @@ Améliore la gestion des les mouvement du pad en faisant en sorte qu'il reste da
 > Consulte l'aide de TIC80 [https://tic80.com/learn](https://tic80.com/learn) et retrouver tous les paramètres de la fonction `circ`
 <!-- /ws:toolbox -->
 
+### Dessiner la balle
+<!-- ws:doit -->
+
 Utilise la fonction  `circ` pour créer la balle au centre de l’écran, pensez à utiliser des variables `ballx` et `bally` pour pouvoir déplacer votre balle dans l’écran de jeu
 
-### Exercice 2 : Faire bouger la balle
-<!-- ws:doit -->
+### Faire bouger la balle
 
 
 <!-- ws:toolbox -->
@@ -123,7 +123,7 @@ Pour obtenir une trajectoire en diagonale (comme sur un billard), il faut modifi
 
 Tout d’abord essayez de faire bouger la balle en diagonale vers le haut et vers la droite en utilisant deux nouvelles variables `ballspeedx` et `ballspeedy`
 
-### Exercice 3 : Faire rebondir la balle
+## Faire rebondir la balle
 <!-- ws: {type: exercise, id: balle-rebond} -->
 
 Pour faire rebondir la balle, tu dois inverser la direction de la balle en fonction de sa position à l’écran. 
@@ -169,7 +169,6 @@ Lorsque la balle dépasse la limite de la bordure du bas de l’espace de jeu, e
 Tu vas devoir faire en sorte de la balle “respawn” au point de départ dès que la balle sort de l’espace de jeu par le bas
 
 ### Gérer la collision avec le pad
-<!-- ws:doit -->
 
 Lorsque la balle se retrouve en collision avec le pad, tu vas devoir faire en sorte que la balle rebondisse sur le pad. Cette étape est importante car c’est à partir de ce moment là que votre jeu sera vraiment jouable
 
@@ -193,7 +192,6 @@ Positionne la fonction print à la fin de votre fonction `TIC()` pour que le sco
 Crée une nouvelle variable `score` que tu vas incrémenter dans la condition qui permet de faire rebondir la balle
 
 ### Life & game over
-<!-- ws:doit -->
 
 De la même manière que dans l’exercice précédent, créez un système de vie, avec 3 vies et un affichage dans l’interface en dessous du score. Lorsque le nombre de vie est égale à zéro alors replacez la balle à son point de départ, faites en sorte que la balle ne bouge plus et affichez “game over” au centre de l’écran
 
@@ -205,7 +203,7 @@ Vous pouvez aussi créer un nouveau jeu en vous appuyant sur tout ce que vous av
 
 ![pong-video-game.gif](https://raw.githubusercontent.com/Manta-Epitech-Academy/pypong_new/main/img/pong-video-game.gif)
 
-# Crédits
+## Crédits
 
 Cet atelier a été écrit et testé à Epitech Montpellier  💙 pour le Coding Club
 

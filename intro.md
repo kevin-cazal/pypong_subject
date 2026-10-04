@@ -3,13 +3,13 @@
 TIC-80 est une fantasy retro console open source conçu pour créer, jouer et partager de petits jeux. Prenez quelques instants pour la découvrir en testant un jeu : [https://tic80.com/play](https://tic80.com/play)
 
 ## Prendre en main l'environnement
-<!-- ws:cue runtime -->
 
 ### Lance l'environnement
 <!-- ws:doit -->
 
 **Ton objectif :** 
 - Ouvre l'environement TIC-80 en cliquant sur le bouton **Ouvrir TIC-80** qui se trouve en bas à droite de ton écran.
+  <!-- ws:cue runtime -->
 - Clique ensuite dans le panneau **TIC-80** sur "Click to play" pour démarrer ton environnement.
 
 ## Initialiser TIC-80 pour pouvoir utiliser le langage Python
@@ -21,7 +21,7 @@ new python
 ```
 
 <!-- ws:toolbox -->
-# Boîte à outils
+### Boîte à outils
 
 > 🧰 **Outil #1 : `new python` « Initiliser un projet en Python dans TIC-80 »**
 > Taper `new python` dans la console permet d'indiquer que tu souhaite faire ton projet en Python. TIC-80 est capable d'utiliser d'autres languages de programmation comme Lua ou JavaScript.
@@ -56,7 +56,7 @@ def TIC():
 ```
 
 <!-- ws:toolbox -->
-# Boîte à outils
+### Boîte à outils
 
 > 🧰 **Outil #1 : `cls()` « efface l'écran »**
 > Moyen mnémotechnique: **CL**ear **S**creen
@@ -66,7 +66,7 @@ def TIC():
 <!-- /ws:toolbox -->
 
 
-### Mise en application:
+### Mise en application
 <!-- ws:doit -->
 
 Écrit le code initial dans l'éditeur:
@@ -97,14 +97,14 @@ Pour lancer ton code:
 - C. À effacer l'écran
 - D. À lancer le programme
 
-<!-- ws: {type: quiz, id: tic-rect, kind: single} -->
+<!-- ws: {type: quiz, id: tic-rect, kind: single, points: 10} -->
 > Que fait la fonction `rect()` ?
 - A. Dessine un cercle
 - B. Dessine un triangle
 - C. Dessine un rectangle
 - D. Cette fonction ne fait rien
 
-<!-- ws: {type: quiz, id: a1-can-go-left-2, kind: single} -->
+<!-- ws: {type: quiz, id: rect-order, kind: single, points: 10} -->
 > Que se passe-t-il si les lignes `rect(0, 0, 120, 120, 10)` et `rect(45, 110, 30, 3, 12)` étaient inversées ?
 - A. Les rectangle sont dessiné dans un ordre différent, le rectangle bleu est dessiné après le rectangle blanc, le rectangle blanc n'est plus visible
 - B. Le programme se comporte exactement comme avant, rien n'a changé
