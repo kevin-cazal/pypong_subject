@@ -117,7 +117,7 @@ Utilise la fonction  `circ` pour créer la balle au centre de l’écran, pensez
 
 Pour faire bouger la balle, tu vas modifier les coordonnées du centre :  `ballx` et `bally` 
 
-![Capture d’écran 2024-12-03 à 22.03.04.png](https://raw.githubusercontent.com/Manta-Epitech-Academy/pypong_new/main/img/Capture_decran_2024-12-03_a_22.03.04.png)
+![Le repère de l'écran de jeu : x va de 0 à 120 vers la droite, y va de 0 à 120 vers le bas](img/repere-ecran-de-jeu.png)
 
 Pour obtenir une trajectoire en diagonale (comme sur un billard), il faut modifier à chaque fois `ballx` et `bally` 
 
@@ -130,7 +130,7 @@ Pour faire rebondir la balle, tu dois inverser la direction de la balle en fonct
 
 si la balle se retrouve en limite avec la zone de jeu alors on simule une collision en inversant la vitesse de la balle sur l’axe sur lequel se trouve la collision
 
-![Capture d’écran 2024-12-03 à 22.11.02.png](https://raw.githubusercontent.com/Manta-Epitech-Academy/pypong_new/main/img/Capture_decran_2024-12-03_a_22.11.02.png)
+![La balle part de la position 1, touche la bordure droite en position 2 et repart vers la position 3](img/rebond-balle-sur-bordure.png)
 
 La balle est dans la position 1 et se dirige vers la position 2 en suivant la trajectoire verte dans ce cas la `ballspeedx = 2` 
 
@@ -201,7 +201,7 @@ Vous pouvez ajouter des nouvelles fonctionnalités de votre jeu comme un écran 
 
 Vous pouvez aussi créer un nouveau jeu en vous appuyant sur tout ce que vous avez appris dans ce coding club comme le célèbre jeu PONG à deux joueurs et pourquoi pas implémenter une IA pour jouer contre vous 
 
-![pong-video-game.gif](https://raw.githubusercontent.com/Manta-Epitech-Academy/pypong_new/main/img/pong-video-game.gif)
+![Le jeu PONG à deux joueurs](img/pong-deux-joueurs.gif)
 
 ## Crédits
 
