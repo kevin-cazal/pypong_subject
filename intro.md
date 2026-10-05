@@ -34,9 +34,9 @@ Le plus simple pour bien comprendre le fonctionnement de TIC-80 consiste de part
 ### Mise en application
 <!-- ws:doit -->
 
-- Après avoir initilisé ton projet en Python, rends-toi dans le panneau **Editor** et supprime tout le code entre la ligne `9` et la ligne `32` incluse.
+- Après avoir initilisé ton projet en Python, rends-toi dans le panneau **Editor** et supprime tout le code **après** `#script: python`.
 
-![Le panneau Editor après la suppression : il reste les lignes de commentaires du début, puis les données du projet.](img/editeur-apres-reset.png)
+![Le panneau Editor après la suppression : il ne reste que la ligne du script Python.](img/editeur-apres-reset.png)
 
 <!-- ws: {type: quiz, id: init-cmd, title: "Créer un projet Python", kind: single, points: 10} -->
 > Quelle commande initialise un projet Python dans TIC-80 ?
