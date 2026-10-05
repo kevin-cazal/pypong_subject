@@ -51,9 +51,9 @@ Ici vas taper tes premières lignes de code dans TIC-80.
 
 
 <!-- ws:toolbox -->
-> 🧰 **Outil #1 : `cls()` « efface l'écran »**
+> 🧰 **Outil #2 : `cls()` « efface l'écran »**
 > Moyen mnémotechnique: **CL**ear **S**creen
-> 🧰 **Outil #2 : `rect()` « dessine un rectangle sur l'écran »**
+> 🧰 **Outil #3 : `rect()` « dessine un rectangle sur l'écran »**
 > Les valeurs entre les parenthèses permettent de préciser la position, les dimensions et la couleur du rectangle
 <!-- /ws:toolbox -->
 

@@ -13,12 +13,12 @@ Pour arriver à faire bouger le pad avec le clavier, nous devons  :
 - Utilisez une condition `if` pour modifier la valeur de `padx` lorsque l’on appuie sur la touche **`←`** du clavier
 
 <!-- ws:toolbox -->
-> 🧰 **Outil #1 : Variable**
+> 🧰 **Outil #4 : Variable**
 > Une variable permet de représenter une valeur qui va changer lors de l'execution d'un programme.
 > `padx` va représenter la position de notre pad sur l'axe des abscisses, cette position peut être modifiée (sinon le pad ne pourrait pas bouger)
 > Le `=` permet de donner une valeur à une variable
 
-> 🧰 **Outil #2 : Condition**
+> 🧰 **Outil #5 : Condition**
 > `if` permet d'exécuter du code seulement à une condition
 > Ici la condition est: « si le joueur appuie sur la touche **`←`** »
 > Le code à executer sous cette condition: « alors modifie la valeur de `padx` »
@@ -73,7 +73,7 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 ### Limitez les mouvement du pad
 
 <!-- ws:toolbox -->
-> 🧰 **Outil #1 : Opérateur logique `and` **
+> 🧰 **Outil #6 : Opérateur logique `and`**
 > Un bloc `if condition1 and condition2:` n'executera du code si et seulement si `condition1` et `condition2` sont remplies
 > Exemple:
 > ```python
@@ -91,7 +91,7 @@ Améliore la gestion des les mouvement du pad en faisant en sorte qu'il reste da
 <!-- ws: {type: exercise, id: balle-mouvement} -->
 
 <!-- ws:toolbox -->
-> 🧰 **Outil #1 : La fonction circ**
+> 🧰 **Outil #7 : La fonction `circ()`**
 > Consulte l'aide de TIC80 [https://tic80.com/learn](https://tic80.com/learn) et retrouver tous les paramètres de la fonction `circ`
 <!-- /ws:toolbox -->
 
@@ -106,7 +106,7 @@ Utilise la fonction  `circ` pour créer la balle au centre de l’écran, pensez
 
 
 <!-- ws:toolbox -->
-> 🧰 **Outil #1 : Vecteur vitesse**
+> 🧰 **Outil #8 : Vecteur vitesse**
 > La fonction `TIC()` est lancée 60 fois par secondes.
 > Pour faire bouger la balle à l'écran à une certaine vitesse, tu dois ajouter à la position de la balle `ballx` et `bally` une vitesse `ballspeedx` et `ballspeedy` à chaque fois que la fonction TIC() est lancée.
 > Une vitesse nulle rend la balle immobile.
