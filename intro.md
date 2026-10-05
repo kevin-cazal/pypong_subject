@@ -12,6 +12,8 @@ TIC-80 est une fantasy retro console open source conçu pour créer, jouer et pa
   <!-- ws:cue runtime -->
 - Clique ensuite dans le panneau **TIC-80** sur "Click to play" pour démarrer ton environnement.
 
+![La console de TIC-80, une fois l'environnement démarré.](img/console-demarrage.png)
+
 ## Initialiser TIC-80 pour pouvoir utiliser le langage Python
 
 Il te suffit de taper la commande suivante dans le panneau **TIC-80**:
@@ -36,6 +38,8 @@ Le plus simple pour bien comprendre le fonctionnement de TIC-80 consiste de part
 <!-- ws:doit -->
 
 - Après avoir initilisé ton projet en Python, rends-toi dans le panneau **Editor** et supprime tout le code entre la ligne `9` et la ligne `32` incluse.
+
+![Le panneau Editor après la suppression : il reste les lignes de commentaires du début, puis les données du projet.](img/editeur-apres-reset.png)
 
 <!-- ws: {type: quiz, id: init-cmd, kind: single, points: 10} -->
 > Quelle commande initialise un projet Python dans TIC-80 ?
@@ -88,6 +92,8 @@ def TIC():
 Pour lancer ton code: 
 - Clique dans le panneau TIC-80
 - Tape la commande `run` **ou** utlise `Ctrl`+`Entrée`
+
+![Le résultat attendu : un grand carré bleu, la zone de jeu, et le pad blanc en bas.](img/ecran-pad-et-zone-de-jeu.png)
 
 <!-- ws: {type: quiz, id: cls-role, kind: single, points: 10} -->
 > À quoi sert la fonction `cls()` dans notre programme TIC-80 ?

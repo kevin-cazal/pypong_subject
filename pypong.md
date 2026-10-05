@@ -54,6 +54,8 @@ Teste en cliquant dans le panneau TIC-80, le raccourci **`Ctrl`+`Entrée`** rela
 
 Après avoir testé le code précédent, inspire toi de celui-ci pour faire en sorte que le pad puisse bouger à droite comme à gauche.
 
+![Le pad se déplace à droite puis à gauche. La manette sous le jeu allume la flèche au moment où elle est appuyée.](img/pad-deux-directions.gif)
+
 
 <!-- ws: {type: hint} -->
 <details><summary>Indice</summary>
@@ -87,6 +89,8 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 
 Améliore la gestion des les mouvement du pad en faisant en sorte qu'il reste dans le carré du jeu.
 
+![La flèche reste appuyée, mais le pad s'arrête contre le bord du carré de jeu, à droite comme à gauche.](img/pad-limites.gif)
+
 
 ## Créer la balle rebondissante
 <!-- ws: {type: exercise, id: balle-mouvement} -->
@@ -102,6 +106,8 @@ Améliore la gestion des les mouvement du pad en faisant en sorte qu'il reste da
 <!-- ws:doit -->
 
 Utilise la fonction  `circ` pour créer la balle au centre de l’écran, pensez à utiliser des variables `ballx` et `bally` pour pouvoir déplacer votre balle dans l’écran de jeu
+
+![La balle est dessinée au centre de la zone de jeu.](img/balle-dessin.png)
 
 ### Faire bouger la balle
 
@@ -123,6 +129,8 @@ Pour obtenir une trajectoire en diagonale (comme sur un billard), il faut modifi
 
 Tout d’abord essayez de faire bouger la balle en diagonale vers le haut et vers la droite en utilisant deux nouvelles variables `ballspeedx` et `ballspeedy`
 
+![La balle part en diagonale, vers le haut et vers la droite. Rien ne l'arrête encore : elle sort de la zone de jeu.](img/balle-mouvement.gif)
+
 ## Faire rebondir la balle
 <!-- ws: {type: exercise, id: balle-rebond} -->
 
@@ -139,6 +147,8 @@ Une fois arrivé au niveau de la bordure de la zone de jeu, sur notre schéma à
 Il faut penser à prendre en compte le rayon de la balle.
 
 Tu as 3 cas à gérer, la bordure du haut, la bordure de droite et la bordure de gauche.
+
+![La balle rebondit sur la bordure du haut, puis sur la bordure de droite. En bas, rien ne l'arrête pour l'instant.](img/balle-rebond.gif)
 
 <!-- ws: {type: quiz, id: rebond, kind: match, points: 10} -->
 > Faites correspondre la vitesse initiale de la balle sur un axe avec la nouvelle vitesse de la balle sur ce même axe afin qu'elle reparte dans l'autre sens ?
@@ -168,9 +178,13 @@ Lorsque la balle dépasse la limite de la bordure du bas de l’espace de jeu, e
 
 Tu vas devoir faire en sorte de la balle “respawn” au point de départ dès que la balle sort de l’espace de jeu par le bas
 
+![Quand la balle sort par le bas, elle revient à son point de départ, au centre.](img/balle-respawn.gif)
+
 ### Gérer la collision avec le pad
 
 Lorsque la balle se retrouve en collision avec le pad, tu vas devoir faire en sorte que la balle rebondisse sur le pad. Cette étape est importante car c’est à partir de ce moment là que votre jeu sera vraiment jouable
+
+![Le joueur place le pad sous la balle : elle rebondit dessus et repart vers le haut.](img/pad-collision.gif)
 
 <!-- ws: {type: hint} -->
 <details><summary>Indice</summary>
@@ -191,9 +205,13 @@ Positionne la fonction print à la fin de votre fonction `TIC()` pour que le sco
 
 Crée une nouvelle variable `score` que tu vas incrémenter dans la condition qui permet de faire rebondir la balle
 
+![Le score est affiché à droite de la zone de jeu. Il augmente de 10 à chaque rebond sur le pad.](img/score.gif)
+
 ### Life & game over
 
 De la même manière que dans l’exercice précédent, créez un système de vie, avec 3 vies et un affichage dans l’interface en dessous du score. Lorsque le nombre de vie est égale à zéro alors replacez la balle à son point de départ, faites en sorte que la balle ne bouge plus et affichez “game over” au centre de l’écran
+
+![Le pad ne bouge pas : à chaque balle perdue, il reste une vie de moins. À zéro, la balle s'arrête à son point de départ et GAME OVER s'affiche.](img/vies-game-over.gif)
 
 ## Pour aller plus loin
 
