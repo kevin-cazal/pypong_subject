@@ -13,8 +13,6 @@ Pour arriver à faire bouger le pad avec le clavier, nous devons  :
 - Utilisez une condition `if` pour modifier la valeur de `padx` lorsque l’on appuie sur la touche **`←`** du clavier
 
 <!-- ws:toolbox -->
-### Boîte à outils
-
 > 🧰 **Outil #1 : Variable**
 > Une variable permet de représenter une valeur qui va changer lors de l'execution d'un programme.
 > `padx` va représenter la position de notre pad sur l'axe des abscisses, cette position peut être modifiée (sinon le pad ne pourrait pas bouger)
@@ -24,7 +22,6 @@ Pour arriver à faire bouger le pad avec le clavier, nous devons  :
 > `if` permet d'exécuter du code seulement à une condition
 > Ici la condition est: « si le joueur appuie sur la touche **`←`** »
 > Le code à executer sous cette condition: « alors modifie la valeur de `padx` »
-
 <!-- /ws:toolbox -->
 
 
