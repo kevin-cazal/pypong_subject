@@ -82,7 +82,7 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 > Un bloc `if condition1 and condition2:` n'executera du code si et seulement si `condition1` et `condition2` sont remplies
 > Exemple:
 > ```python
-> if ilFaitBeau and jeSuisDehors:
+> if ilPleut and jeSuisDehors:
 >   ouvreUnParapluie
 > ```
 <!-- /ws:toolbox -->
