@@ -71,8 +71,11 @@ def TIC():
 
 <details>
     <summary>Explications</summary>
+
 - La partie principale du programme se déclare de la façon suivante `def TIC():`
+
 - Le code en dessous de la partie principale du programme doit respecter une indentation propre au python : il faut un espace au début de chaque ligne comme le code ci-dessus.
+
 - Les instructions en dessous de `def TIC():` s'éxecutent dans l'ordre: éffacer l'écran, dessine un rectangle, dessine un autre rectangle
 
 </details>
