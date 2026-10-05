@@ -23,11 +23,8 @@ new python
 ```
 
 <!-- ws:toolbox -->
-### Boîte à outils
-
 > 🧰 **Outil #1 : `new python` « Initiliser un projet en Python dans TIC-80 »**
 > Taper `new python` dans la console permet d'indiquer que tu souhaite faire ton projet en Python. TIC-80 est capable d'utiliser d'autres languages de programmation comme Lua ou JavaScript.
-
 <!-- /ws:toolbox -->
 
 ## Reset “hello world”
@@ -50,23 +47,14 @@ Le plus simple pour bien comprendre le fonctionnement de TIC-80 consiste de part
 
 ## Affichage du pad et de l’écran de jeu
 
-Tu va taper tes premières lignes de code dans TIC-80: 
+Ici vas taper tes premières lignes de code dans TIC-80.
 
-```python
-def TIC():
- cls()
- rect(0,0,120,120,10)
- rect(45, 110, 30, 3, 12)
-```
 
 <!-- ws:toolbox -->
-### Boîte à outils
-
 > 🧰 **Outil #1 : `cls()` « efface l'écran »**
 > Moyen mnémotechnique: **CL**ear **S**creen
 > 🧰 **Outil #2 : `rect()` « dessine un rectangle sur l'écran »**
 > Les valeurs entre les parenthèses permettent de préciser la position, les dimensions et la couleur du rectangle
-
 <!-- /ws:toolbox -->
 
 
