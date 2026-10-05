@@ -118,7 +118,7 @@ Pour faire bouger la balle, tu vas modifier les coordonnées du centre :  `ballx
 
 Pour obtenir une trajectoire en diagonale (comme sur un billard), il faut modifier à chaque fois `ballx` et `bally` 
 
-Tout d’abord essayez de faire bouger la balle en diagonale vers le haut et vers la droite en utilisant deux nouvelles variables `ballspeedx` et `ballspeedy`
+Tout d’abord essaye de faire bouger la balle en diagonale vers le haut et vers la droite en utilisant deux nouvelles variables `ballspeedx` et `ballspeedy`
 
 ![La balle part en diagonale, vers le haut et vers la droite. Rien ne l'arrête encore : elle sort de la zone de jeu.](img/balle-mouvement.gif)
 
