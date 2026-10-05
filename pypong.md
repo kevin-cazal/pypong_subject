@@ -35,9 +35,9 @@ padh=3
 
 def TIC():
  global padx
-  
+
  if btn(2):
-	 padx = padx - 2
+  padx = padx - 2
  cls()
  rect(0,0,120,120,10)
  rect(padx, 110, padw, padh, 12)
@@ -78,7 +78,7 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 > Exemple:
 > ```python
 > if ilPleut and jeSuisDehors:
->   ouvreUnParapluie
+>  ouvreUnParapluie
 > ```
 <!-- /ws:toolbox -->
 
