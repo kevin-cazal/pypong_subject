@@ -137,7 +137,13 @@ Une fois arrivé au niveau de la bordure de la zone de jeu, sur notre schéma à
 
 Il faut penser à prendre en compte le rayon de la balle.
 
-Tu as 3 cas à gérer, la bordure du haut, la bordure de droite et la bordure de gauche.
+### Les 3 cas à gérer
+<!-- ws: doit -->
+
+Tu as 3 cas à gérer, Tu dois faire en sorte de faire rebondir la balle quand elle touche:
+- La bordure du haut
+- La bordure de droite
+- La bordure de gauche
 
 ![La balle rebondit sur la bordure du haut, puis sur la bordure de droite. En bas, rien ne l'arrête pour l'instant.](img/balle-rebond.gif)
 
