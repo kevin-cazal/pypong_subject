@@ -47,7 +47,7 @@ Le plus simple pour bien comprendre le fonctionnement de TIC-80 consiste de part
 
 ## Affichage du pad et de l’écran de jeu
 
-Ici vas taper tes premières lignes de code dans TIC-80.
+Ici tu vas taper tes premières lignes de code dans TIC-80.
 
 
 <!-- ws:toolbox -->
