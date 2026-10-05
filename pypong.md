@@ -76,8 +76,6 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 ### Limitez les mouvement du pad
 
 <!-- ws:toolbox -->
-### Boîte à outils
-
 > 🧰 **Outil #1 : Opérateur logique `and` **
 > Un bloc `if condition1 and condition2:` n'executera du code si et seulement si `condition1` et `condition2` sont remplies
 > Exemple:
@@ -96,8 +94,6 @@ Améliore la gestion des les mouvement du pad en faisant en sorte qu'il reste da
 <!-- ws: {type: exercise, id: balle-mouvement} -->
 
 <!-- ws:toolbox -->
-### Boîte à outils
-
 > 🧰 **Outil #1 : La fonction circ**
 > Consulte l'aide de TIC80 [https://tic80.com/learn](https://tic80.com/learn) et retrouver tous les paramètres de la fonction `circ`
 <!-- /ws:toolbox -->
@@ -113,8 +109,6 @@ Utilise la fonction  `circ` pour créer la balle au centre de l’écran, pensez
 
 
 <!-- ws:toolbox -->
-### Boîte à outils
-
 > 🧰 **Outil #1 : Vecteur vitesse**
 > La fonction `TIC()` est lancée 60 fois par secondes.
 > Pour faire bouger la balle à l'écran à une certaine vitesse, tu dois ajouter à la position de la balle `ballx` et `bally` une vitesse `ballspeedx` et `ballspeedy` à chaque fois que la fonction TIC() est lancée.
