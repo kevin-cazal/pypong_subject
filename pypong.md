@@ -61,7 +61,7 @@ La fonction **`btn`** prend en paramètre un nombre ( 3 : flèche droite du cla
 
 </details>
 
-<!-- ws: {type: quiz, id: btn-doc, kind: multiple, points: 10} -->
+<!-- ws: {type: quiz, id: btn-doc, title: "Les touches du joueur", kind: multiple, points: 10} -->
 > Avec TIC-80, si je souhaite avoir l'état des touches haut et bas du joueur 1, je dois utiliser dans mon code (2 réponses correctes)
 
 * A. btn(0)
@@ -141,7 +141,7 @@ Tu as 3 cas à gérer, la bordure du haut, la bordure de droite et la bordure de
 
 ![La balle rebondit sur la bordure du haut, puis sur la bordure de droite. En bas, rien ne l'arrête pour l'instant.](img/balle-rebond.gif)
 
-<!-- ws: {type: quiz, id: rebond, kind: match, points: 10} -->
+<!-- ws: {type: quiz, id: rebond, title: "Le sens du rebond", kind: match, points: 10} -->
 > Faites correspondre la vitesse initiale de la balle sur un axe avec la nouvelle vitesse de la balle sur ce même axe afin qu'elle reparte dans l'autre sens ?
 
 - A. 0

@@ -38,7 +38,7 @@ Le plus simple pour bien comprendre le fonctionnement de TIC-80 consiste de part
 
 ![Le panneau Editor après la suppression : il reste les lignes de commentaires du début, puis les données du projet.](img/editeur-apres-reset.png)
 
-<!-- ws: {type: quiz, id: init-cmd, kind: single, points: 10} -->
+<!-- ws: {type: quiz, id: init-cmd, title: "Créer un projet Python", kind: single, points: 10} -->
 > Quelle commande initialise un projet Python dans TIC-80 ?
 
 - A. init python
@@ -86,7 +86,7 @@ Pour lancer ton code:
 
 ![Le résultat attendu : un grand carré bleu, la zone de jeu, et le pad blanc en bas.](img/ecran-pad-et-zone-de-jeu.png)
 
-<!-- ws: {type: quiz, id: cls-role, kind: single, points: 10} -->
+<!-- ws: {type: quiz, id: cls-role, title: "Le rôle de cls()", kind: single, points: 10} -->
 > À quoi sert la fonction `cls()` dans notre programme TIC-80 ?
 
 - A. À calculer le score du joueur
@@ -94,14 +94,14 @@ Pour lancer ton code:
 - C. À effacer l'écran
 - D. À lancer le programme
 
-<!-- ws: {type: quiz, id: tic-rect, kind: single, points: 10} -->
+<!-- ws: {type: quiz, id: tic-rect, title: "La fonction rect()", kind: single, points: 10} -->
 > Que fait la fonction `rect()` ?
 - A. Dessine un cercle
 - B. Dessine un triangle
 - C. Dessine un rectangle
 - D. Cette fonction ne fait rien
 
-<!-- ws: {type: quiz, id: rect-order, kind: single, points: 10} -->
+<!-- ws: {type: quiz, id: rect-order, title: "L'ordre des rectangles", kind: single, points: 10} -->
 > Que se passe-t-il si les lignes `rect(0, 0, 120, 120, 10)` et `rect(45, 110, 30, 3, 12)` étaient inversées ?
 - A. Les rectangle sont dessiné dans un ordre différent, le rectangle bleu est dessiné après le rectangle blanc, le rectangle blanc n'est plus visible
 - B. Le programme se comporte exactement comme avant, rien n'a changé
