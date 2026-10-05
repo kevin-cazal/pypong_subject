@@ -15,8 +15,11 @@ runtime:
   engine: "TIC-80"
   language: "python"
   id: "tic80"
-  version: "8ad976f"          # tic80-web-editor commit the dist was built from
+  version: "8a7cb53"          # tic80-web-editor_runtime commit the dist was built from
   title: "TIC-80"
+  # Options the runtime reads when it starts (workshop_platform, docs/RUNTIME_PROTOCOL.md §4b).
+  params:
+    repl: off                 # the REPL panel under the editor: lua | py | js | off
   pane:
     placement: side           # side | bottom
     open: false               # let the participant read the intro first
