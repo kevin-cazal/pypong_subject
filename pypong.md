@@ -1,7 +1,3 @@
-# Créer ton mini-jeu
-
-Tu es prêt à créer ton premier mini-jeu.
-
 ## Prise en main de TIC-80
 <!-- ws: {type: chapter, topology: linear} -->
 
